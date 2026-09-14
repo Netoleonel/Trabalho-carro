@@ -8,8 +8,8 @@ let truckApiData = {};
 // Função para buscar os dados da API JSON
 async function carregarAPI() {
     try {
-        // Faz a requisição para o seu arquivo/API local
-        const resposta = await fetch('api_camionetes.json');
+        // CORREÇÃO: Nome do arquivo alterado para link.json
+        const resposta = await fetch('link.json');
         
         if (!resposta.ok) {
             throw new Error('Erro ao carregar a API de imagens');
@@ -22,7 +22,6 @@ async function carregarAPI() {
         
     } catch (erro) {
         console.error("Falha na API:", erro);
-        // Fallback: se a API falhar, avisa o usuário no console
     }
 }
 
@@ -41,8 +40,8 @@ function updatePreview() {
         if(truckApiData[model] && truckApiData[model][mod]) {
             previewImg.src = truckApiData[model][mod];
         } else {
-            // Caminho padrão caso falte alguma foto na API
-            previewImg.src = "img/f250_brasil_texas.jpg";
+            // CORREÇÃO: Caminho da pasta padronizado para "Imagens"
+            previewImg.src = "Imagens/f250_brasil_texas.jpg";
         }
         previewImg.classList.remove('fade-out');
     }, 400); 
