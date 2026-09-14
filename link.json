@@ -1,0 +1,17 @@
+{
+  "f250": {
+    "original": "Imagens/f250_ori.jpg",
+    "lift": "Imagens/f250_mod.jpg",
+    "street": "Imagens/f250_reba.jpg"
+  },
+  "hilux": {
+    "original": "Imagens/hilux_ori.jpg",
+    "lift": "Imagens/hilux_mod.jpg",
+    "street": "Imagens/hilux_reba.jpg"
+  },
+  "ram": {
+    "original": "Imagens/ram_ori.jpg",
+    "lift": "Imagens/ram_mod.jpg",
+    "street": "Imagens/ram_reba.jpg"
+  }
+}

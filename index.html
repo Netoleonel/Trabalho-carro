@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Garagem Bruta | Customização de Camionetes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">Garagem <span>067</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Monte a sua Bruta</h1>
+        <p>Especialistas em customização. Escolha o modelo e veja a transformação.</p>
+    </section>
+
+    <section id="simulador" class="configurator">
+        <h2>Simulador de Projetos</h2>
+        <p class="subtitle">Selecione a camionete e o estilo de modificação para ver o resultado.</p>
+        
+        <div class="config-container">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="truck-model">Modelo da Camionete:</label>
+                    <select id="truck-model">
+                        <option value="f250">Ford F-250</option>
+                        <option value="hilux">Toyota Hilux</option>
+                        <option value="ram">Dodge Ram</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="truck-mod">Estilo do Projeto:</label>
+                    <select id="truck-mod">
+                        <option value="original">Original (Fábrica)</option>
+                        <option value="lift">Lift / Off-Road (Erguida)</option>
+                        <option value="street">Street (Rebaixada)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="preview">
+                <!-- Imagem inicial -->
+                <img id="truck-preview" src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Preview da Camionete">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Suspensão e Lift</h3>
+                <p>Kits de elevação sob medida, amortecedores de alta performance e ajuste de geometria.</p>
+            </div>
+            <div class="card">
+                <h3>Performance Diesel</h3>
+                <p>Remapeamento de injeção, difusores de escape, e turbinas redimensionadas.</p>
+            </div>
+            <div class="card">
+                <h3>Estética Externa</h3>
+                <p>Pintura, envelopamento, instalação de estribos, para-choques de ferro e alargadores.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Garagem Bruta. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Importando o script JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
